@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Reservia</title>
+    <!--meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Reservia est une entreprise qui vous aide à planifier vos vacances"
+    />
+    <meta name="author" content="adekambi rachad" />
+    <meta name="robots" content="index, follow" />
+    <!-- css-->
+    <link rel="stylesheet" type="text/css" href="style2.css" />
+
+    <!--font awesome-->
+    <script
+      src="https://kit.fontawesome.com/b14771b76e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav>
+      <img src="./images/logo/Reservia.svg" alt="logo de Reservia" id="logo" />
+      <ul class="menu">
+        <li class="menu_link"><a href="#hostings">Hébergements</a></li>
+        <li class="menu_link"><a href="#activities">Activités</a></li>
+        <li class="menu_login"><a href="#">S'inscrire</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <header class="header_section">
+        <!--title-->
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+
+        <!--search_form-->
+        <form
+          class="search_form"
+          action="https://rachad-alabi-adekambi.github.io/RachadAlabiAdekambi_2_09112020/"
+          method="POST"
+        >
+          <div class="search_form_icon">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+          </div>
+          <input
+            class="search_form_text_"
+            type="text"
+            name="search"
+            id="search_input"
+            placeholder="Marseille, France"
+          />
+          <input class="search_form_submit" type="submit" value="Rechercher" />
+          <button class="search_form_submit_responsive" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+
+        <!--filters-->
+        <div class="filters">
+          <h2 class="filters_title">Filtres</h2>
+          <div class="filters_items">
+            <a href="">
+              <div class="filters_item">
+                <div class="filters_item_icon">
+                  <i class="fas fa-money-bill-wave"></i>
+                </div>
+                <h3>Économique</h3>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="filters_item">
+                <div class="filters_item_icon">
+                  <i class="fas fa-child"></i>
+                </div>
+                <h3>Familial</h3>
+              </div>
+            </a>
+
+            <a href="">
+              <div class="filters_item">
+                <div class="filters_item_icon">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <h3>Romantique</h3>
+              </div>
+            </a>
+
+            <a href="">
+              <div class="filters_item">
+                <div class="filters_item_icon">
+                  <i class="fas fa-dog"></i>
+                </div>
+                <h3>Animaux autorisés</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!--infos-->
+        <div class="infos">
+          <div class="infos_icon">
+            <i class="fas fa-info 1x"></i>
+          </div>
+          <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+      </header>
+
+      <!--hostings-->
+      <section class="hostings" id="hostings">
+        <!--main hostings-->
+        <div class="main_hostings">
+          <h2>Hébergements à Marseille</h2>
+          <div class="main_hostings_figures">
+            <a href=""
+              ><figure class="main_hostings_figure">
+                <img
+                  srcset="
+                    images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg 5993w,
+                    images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg  2997w,
+                    images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1499w,
+                    images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg   750w
+                  "
+                  sizes="(min-width: 1024px) 240px,
+                          (max-width: 1024px) 200px,
+                          (max-width: 768px) 200px,
+                          (max-width: 576px) 120px,
+                              240px"
+                  src="marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                  alt="chambre d'hôtel à marseille"
+                />
+                <figcaption class="main_hostings_figcaption">
+                  <h3 class="main_hostings_title">Auberge la Cannebière</h3>
+                  <p class="main_hostings_text">
+                    Nuit à partir de 25 <strong>€</strong>
+                  </p>
+                  <div class="main_hostings_stars">
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="false"></i>
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+
+            <a href=""
+              ><figure class="main_hostings_figure">
+                <img
+                  srcset="
+                    images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg 5472w,
+                    images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg  2736w,
+                    images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg 1368w,
+                    images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg   684w
+                  "
+                  sizes="(min-width: 1024px) 240px,
+                          (max-width: 1024px) 200px,
+                          (max-width: 768px) 200px,
+                          (max-width: 576px) 120px,
+                              240px"
+                  src="fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                  alt="chambre d'hôtel à marseille"
+                />
+                <figcaption class="main_hostings_figcaption">
+                  <h3 class="main_hostings_title">Hôtel du port</h3>
+                  <p class="main_hostings_text">
+                    Nuit à partir de 52 <strong> €</strong>
+                  </p>
+                  <div class="main_hostings_stars">
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+
+            <a href="">
+              <figure class="main_hostings_figure">
+                <img
+                  srcset="
+                    images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg 6000w,
+                    images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg  3000w,
+                    images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg 1500w,
+                    images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg   750w
+                  "
+                  sizes="(min-width: 1024px) 240px,
+                          (max-width: 1024px) 200px,
+                          (max-width: 768px) 200px,
+                          (max-width: 576px) 120px,
+                              240px"
+                  src="reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                  alt="chambre d'hôtel à marseille"
+                />
+                <figcaption class="main_hostings_figcaption">
+                  <h3 class="main_hostings_title">Hôtel les mouettes</h3>
+                  <p class="main_hostings_text">
+                    Nuit à partir de 76<strong> €</strong>
+                  </p>
+                  <div class="main_hostings_stars">
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="false"></i>
+                  </div>
+                </figcaption></figure
+            ></a>
+
+            <a href="">
+              <figure class="main_hostings_figure">
+                <img
+                  srcset="
+                    images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg 4000w,
+                    images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg  2000w,
+                    images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg  934w,
+                    images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg   500w
+                  "
+                  sizes="(min-width: 1024px) 240px,
+                          (max-width: 1024px) 200px,
+                          (max-width: 768px) 200px,
+                          (max-width: 576px) 120px,
+                              240px"
+                  src="annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                  alt="chambre d'hôtel à marseille"
+                />
+                <figcaption class="main_hostings_figcaption">
+                  <h3 class="main_hostings_title">Hôtel de la mer</h3>
+                  <p class="main_hostings_text">
+                    Nuit à partir de 46<strong> €</strong>
+                  </p>
+                  <div class="main_hostings_stars">
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="false"></i>
+                    <i class="fas fa-star star_icon" data-active="false"></i>
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+
+            <a href="">
+              <figure class="main_hostings_figure">
+                <img
+                  srcset="
+                    images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 5212w,
+                    images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg  2606w,
+                    images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg  733w,
+                    images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg   652w
+                  "
+                  sizes="(min-width: 1024px) 240px,
+                          (max-width: 1024px) 200px,
+                          (max-width: 768px) 200px,
+                          (max-width: 576px) 120px,
+                              240px"
+                  src="nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                  alt="chambre d'hôtel à marseille"
+                />
+                <figcaption class="main_hostings_figcaption">
+                  <h3 class="main_hostings_title">Auberge le panier</h3>
+                  <p class="main_hostings_text">
+                    Nuit à partir de 23<strong> €</strong>
+                  </p>
+                  <div class="main_hostings_stars">
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="false"></i>
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+
+            <a href="">
+              <figure class="main_hostings_figure">
+                <img
+                  srcset="
+                    images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 4000w,
+                    images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg  1944w,
+                    images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg  972w,
+                    images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg   486w
+                  "
+                  sizes="(min-width: 1024px) 240px,
+                          (max-width: 1024px) 200px,
+                          (max-width: 768px) 200px,
+                          (max-width: 576px) 120px,
+                              240px"
+                  src="febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                  alt="chambre d'hôtel à marseille"
+                />
+                <figcaption class="main_hostings_figcaption">
+                  <h3 class="main_hostings_title">Hôtel chez Amina</h3>
+                  <p class="main_hostings_text">
+                    Nuit à partir de 96<strong>€</strong>
+                  </p>
+                  <div class="main_hostings_stars">
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                  </div>
+                </figcaption></figure
+            ></a>
+          </div>
+          <a href=""><h3 class="display_more">Afficher plus</h3> </a>
+        </div>
+
+        <!--popular_hostings-->
+        <div class="popular_hostings">
+          <div class="popular_hostings_head">
+            <h2 class="popular_hostings_heading">Les plus populaires</h2>
+            <i class="fas fa-chart-line fa-2x"></i>
+          </div>
+          <div class="popular_hostings_figures">
+            <a href="">
+              <figure class="popular_hostings_figure">
+                <img
+                  srcset="
+                    images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 4249w,
+                    images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg  2125w,
+                    images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 1063w,
+                    images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg   532w
+                  "
+                  sizes="(min-width: 1024px) 130px,
+                          (max-width: 1024px) 160px,
+                          (max-width: 768px) 130px,
+                          (max-width: 576px) 130px,
+                            130px"
+                  src="emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                  alt="chambre d'hôtel à marseille"
+                />
+
+                <figcaption class="popular_hostings_figcaption">
+                  <h3 class="popular_hostings_title">
+                    Hôtel le soleil du matin
+                  </h3>
+                  <p class="popular_hostings_text">
+                    Nuit à partir de 128<strong>€</strong>
+                  </p>
+                  <div class="popular_hostings_stars">
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+
+            <a href="">
+              <figure class="popular_hostings_figure">
+                <img
+                  srcset="
+                    images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg 4032w,
+                    images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg  2016w,
+                    images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg 1008w,
+                    images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg   504w
+                  "
+                  sizes="(min-width: 1024px) 130px,
+                          (max-width: 1024px) 160px,
+                          (max-width: 768px) 130px,
+                          (max-width: 576px) 130px,
+                            130px"
+                  src="aw-creative-VGs8z60yT2c-unsplash.jpg"
+                  alt="chambre d'hôtel à marseille"
+                />
+                <figcaption class="popular_hostings_figcaption">
+                  <h3 class="popular_hostings_title">
+                    Au coeur de l'eau Chambres d'hôtes
+                  </h3>
+                  <p class="popular_hostings_text">
+                    Nuit à partir de 71<strong>€</strong>
+                  </p>
+                  <div class="popular_hostings_stars">
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="false"></i>
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+
+            <a href="">
+              <figure class="popular_hostings_figure">
+                <img
+                  srcset="
+                    images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg 4000w,
+                    images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg  2000w,
+                    images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg 1000w,
+                    images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg   500w
+                  "
+                  sizes="(min-width: 1024px) 130px,
+                          (max-width: 1024px) 160px,
+                          (max-width: 768px) 130px,
+                          (max-width: 576px) 130px,
+                            130px"
+                  src="febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                  alt="chambre d'hôtel à marseille"
+                />
+                <figcaption class="popular_hostings_figcaption">
+                  <h3 class="popular_hostings_title">
+                    Hôtel tout bleu et blanc
+                  </h3>
+                  <p class="popular_hostings_text">
+                    Nuit à partir de 68<strong>€</strong>
+                  </p>
+                  <div class="popular_hostings_stars">
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="true"></i>
+                    <i class="fas fa-star star_icon" data-active="false"></i>
+                  </div>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--activities-->
+      <section class="activities" id="activities">
+        <h2 class="activities_title">Activités à Marseille</h2>
+        <div class="activities_figures">
+          <!--activities_figure-->
+          <a href="">
+            <figure class="activities_figure">
+              <img
+                srcset="
+                  images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 5616w,
+                  images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg  2808w,
+                  images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 1404w,
+                  images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg   702w
+                "
+                sizes="(min-width: 1024px) 310px,
+                          (max-width: 1024px) 160px,
+                          (max-width: 768px) 160px,
+                          (max-width: 576px) 310px,
+                            310px"
+                src="reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                alt="chambre d'hôtel à marseille"
+              />
+              <h3 class="activities_title">Vieux port</h3>
+            </figure>
+          </a>
+
+          <!--activities_figures_cards-->
+          <div class="activities_figures_cards">
+            <a href="">
+              <figure class="activities_figures_card">
+                <img
+                  srcset="
+                    images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg 2843w,
+                    images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg  1422w,
+                    images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg  711w,
+                    images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg   356w
+                  "
+                  sizes="(min-width: 1024px) 310px,
+                          (max-width: 1024px) 160px,
+                          (max-width: 768px) 160px,
+                          (max-width: 576px) 310px,
+                            310px"
+                  src="paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                  alt="activité à marseille"
+                />
+                <h3 class="activities_title">Fort de Pomègues</h3>
+              </figure>
+            </a>
+
+            <a href="">
+              <figure class="activities_figures_card">
+                <img
+                  srcset="
+                    images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 5184w,
+                    images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg  2592w,
+                    images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 1296w,
+                    images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg   648w
+                  "
+                  sizes="(min-width: 1024px) 310px,
+                          (max-width: 1024px) 160px,
+                          (max-width: 768px) 160px,
+                          (max-width: 576px) 310px,
+                            310px"
+                  src="kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                  alt="activité à marseille"
+                />
+                <h3 class="activities_title">Îles du Frioul</h3>
+              </figure>
+            </a>
+          </div>
+
+          <!--activities_figure-->
+          <a href="">
+            <figure class="activities_figure">
+              <img
+                srcset="
+                  images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 4846w,
+                  images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg  2423w,
+                  images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 1212w,
+                  images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg   606w
+                "
+                sizes="(min-width: 1024px) 310px,
+                          (max-width: 1024px) 160px,
+                          (max-width: 768px) 160px,
+                          (max-width: 576px) 310px,
+                            310px"
+                src="kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                alt="activité à marseille"
+              />
+              <h3 class="activities_title">Parc National des Calanques</h3>
+            </figure>
+          </a>
+
+          <!--activities_figures_cards-->
+          <div class="activities_figures_cards">
+            <a href="">
+              <figure class="activities_figures_card">
+                <img
+                  srcset="
+                    images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg 4712w,
+                    images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg  2356w,
+                    images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg 1178w,
+                    images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg   589w
+                  "
+                  sizes="(min-width: 1024px) 310px,
+                          (max-width: 1024px) 160px,
+                          (max-width: 768px) 160px,
+                          (max-width: 576px) 310px,
+                            310px"
+                  src="florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                  alt="activité à marseille"
+                />
+                <h3 class="activities_title">Notre-dame-de-la-garde</h3>
+              </figure>
+            </a>
+
+            <a href="">
+              <figure class="activities_figures_card">
+                <img
+                  srcset="
+                    images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg 4032w,
+                    images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg  2016w,
+                    images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg 1008w,
+                    images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg   504w
+                  "
+                  sizes="(min-width: 1024px) 310px,
+                          (max-width: 1024px) 160px,
+                          (max-width: 768px) 160px,
+                          (max-width: 576px) 310px,
+                            310px"
+                  src="lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                  alt="activité à marseille"
+                />
+                <h3 class="activities_title">Parc Longchamp</h3>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--footer-->
+    <footer>
+      <div class="footer_items">
+        <section class="footer_item">
+          <h3>A propos</h3>
+          <ul>
+            <li><a href="#">Fonctionnement du site</a></li>
+            <li><a href="#">Conditions générales de vente</a></li>
+            <li><a href="#">Données et confidentialité</a></li>
+          </ul>
+        </section>
+
+        <section class="footer_item">
+          <h3>Nos hébergements</h3>
+          <ul>
+            <li><a href="#">Charte qualité</a></li>
+            <li><a href="#">Soumettre votre hôtel</a></li>
+          </ul>
+        </section>
+
+        <section class="footer_item">
+          <h3>Assistance</h3>
+          <ul>
+            <li><a href="#">Centre d'aide</a></li>
+            <li><a href="#">Nous contacter</a></li>
+          </ul>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

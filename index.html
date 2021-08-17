@@ -3,54 +3,63 @@
 <head>
 <meta charset="utf-8">
 <meta name="Reservia">
-<meta description="Les vacances de vos rêves sont forcément chez Reservia ! Résevez facilement en ligne votre hébergement.">
+<meta description="Les vacances de vos rêves sont forcément chez Reservia ! Résevez facilement votre hébergement en ligne.">
 <title>Réservia</title>
 <link href="style.css" rel="stylesheet" type="text/css">
+<script src="https://kit.fontawesome.com/b7f1b4c007.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 	<header>
-		<div>
-		  <a href="index.php"><img src="./images/logo/Reservia.svg" alt="logo de Reservia" id="logo"></a>
+		<div class="entete">
+		  <a href="index.html"><img src="images/logo/Reservia.svg" alt="logo de Reservia" id="logo"></a>
 			<nav>
-				<ul>
+				<ul class="menu">
 					<li><a href="#">Hébergement</a></li>
 					<li><a href="#">Activité</a></li>
 				</ul>
 			</nav>
 			<nav>
-				<ul><li><a href="#">S'inscrire</a></li></ul>
+				<ul><li><a href="#" class="inscrire">S'inscrire</a></li></ul>
 			</nav>
 		</div>
 		<div>
 			<h1>Trouvez votre hébergement pour des vacances de rêves</h1>
 			<p>En plein centre ville ou en pleine nature.</p>
-			<div>
+			<form class="formulaire_recherche" action="#" method="POST">
 				<i class="fa-solid fa-location-dot"></i>
-				<input type="search" id="site-search" name="search" placeholder="Marseille, France">
+				<input type="search" id="recherche" name="search" placeholder="Marseille, France">
 				<button>Rechercher</button>
-			</div>
-			<div>
+			</form>
+			<div class="filtres">
 				<h2>Filtres</h2>
 				<div>
-					<i class="fa-solid fa-money-bill-wave"></i>
-					<p>Economique</p>
+					<a href="#">
+						<i class="fas fa-money-bill-wave"></i>
+						<p>Economique</p>
+					</a>
 				</div>
 				<div>
-					<i class="fas fa-child"></i>
-					<p>Famillial</p>
+					<a href="#">
+						<i class="fas fa-child"></i>
+						<p>Famillial</p>
+					</a>
 				</div>
 				<div>
-					<i class="fa-solid fa-heart"></i>
-					<p>Romantique</p>
+					<a href="#">
+						<i class="fas fa-heart"></i>
+						<p>Romantique</p>
+					</a>
 				</div>
 				<div>
-					<i class="fa-solid fa-dog"></i>
-					<p>Animaux autorisés</p>
+					<a href="#">
+						<i class="fas fa-dog"></i>
+						<p>Animaux autorisés</p>
+					</a>
 				</div>
 			</div>
-			<div>
-				<i class="fas fa-info 1x"></i>
+			<div class="information">
+				<i class="fas fa-info"></i>
 				<p>plus de 500 logements sont disponibles dans cette ville</p>
 			</div>
 		</div>

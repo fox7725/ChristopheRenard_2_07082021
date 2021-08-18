@@ -1,21 +1,41 @@
 @charset "utf-8";
 /* CSS Document */
-
+/* ======================= tout le site ============================= */
 * {
   margin: 0;
   padding: 0;
   font-family: "Raleway", "arial";
   box-sizing: border-box;
 }
+/* ======================= entête ============================= */
 .entete {
 }
+/* ======================= menu ============================= */
 .menu {
 }
+/* ======================= menu : liens hébergement et activité ============================= */
+.menu_h_a {
+}
+/* ======================= menu : lien s'inscrire ============================= */
+.menu_sinscrire {
+}
+/* ======================= recherche ============================= */
 .formulaire_recherche {
 }
+/* ======================= les filtres ============================= */
 .filtres {
 }
+/* ======================= ligne d'information ============================= */
 .information {
 }
+/* ======================= container de l'image + légende ============================= */
 .hebergement_figure {
+}
+/* ======================= étoiles grises ============================= */
+.star_grey {
+	color:#F2F2F2
+}
+/* ======================= étoiles bleues ============================= */
+.star_blue {
+	color:#0065FC
 }

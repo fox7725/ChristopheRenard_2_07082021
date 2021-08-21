@@ -7,11 +7,32 @@
   font-family: "Raleway", "arial";
   box-sizing: border-box;
 }
+
+img {
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+/* ======================= logo ============================= */
+#logo {
+	margin: 20px auto auto 20px;
+	display: flex;
+	padding: 0;
+	justify-content: flex-start;
+}
 /* ======================= entête ============================= */
 .entete {
 }
 /* ======================= menu ============================= */
 .menu {
+	display: flex;
+	padding: 0;
+	justify-content: flex-end;
+	margin-left: 50px;
+}
+.menu li {
+	list-style-type: none;
+	margin-left: 50px;
+	display: block;
 }
 /* ======================= menu : liens hébergement et activité ============================= */
 .menu_h_a {
@@ -30,12 +51,40 @@
 }
 /* ======================= container de l'image + légende ============================= */
 .hebergement_figure {
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 2px 1px 5px 2px rgb(209, 209, 209);
+}
+.hebergement_figure:hover {
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 2px 1px 5px 2px grey;
 }
 /* ======================= étoiles grises ============================= */
 .star_grey {
-	color:#F2F2F2
+	color:#F2F2F2;
 }
 /* ======================= étoiles bleues ============================= */
 .star_blue {
-	color:#0065FC
+	color:#0065FC;
+}
+/* ======================= container hébergement ============================= */
+#hebergement {
+	background-color: #f2f2f2;
+	border-radius: 20px;
+}
+/* ======================= container populaire ============================= */
+#populaire {
+	background-color: #f2f2f2;
+	border-radius: 20px;
+}
+/* ======================= container activités ============================= */
+#activites {
+}
+/* ======================= container produit ============================= */
+.produit {
+	width: 250px;
+	height: 200px;
+	padding: 4px;
+	justify-content: center;
 }

@@ -15,16 +15,15 @@
 <!-- le header comprend le logo et la navigation -->
 	<header>
 		<div class="entete"> <!-- logo + navigation -->
-		  <a href="index.html"><img src="images/logo/Reservia.svg" alt="logo de Reservia" id="logo"></a>
 			<nav>
+				<a href="index.html"><img src="images/logo/Reservia.svg" alt="logo de Reservia" id="logo"></a>
 				<ul class="menu">
-					<li><a href="#" class="menu_h_a">Hébergement</a></li>
-					<li><a href="#" class="menu_h_a">Activité</a></li>
-					<li><a href="#" class="menu_sinscrire">S'inscrire</a></li>
+					<li><a href="#hebergement" class="menu_h_a">Hébergement</a></li>
+					<li><a href="#activites" class="menu_h_a">Activité</a></li>
+					<li><a href="#" class="menu_sinscrire"><strong>S'inscrire</strong></a></li>
 				</ul>
 			</nav>
 		</div>
-		
 	</header>
 	<main>
 		<div>
@@ -69,9 +68,69 @@
 			<i class="fas fa-info"></i>
 			<p>plus de 500 logements sont disponibles dans cette ville</p>
 		</div>
-		<div> <!-- hébergement à Marseille -->
+		<div id="hebergement"> <!-- hébergement à Marseille -->
 			<h2>Hébergement à Marseille</h2>
-			<div> <!-- ensemble des articles -->
+			<div class="produit"> <!-- Auberge la Cannebière -->
+				<figure class="hebergement_figure">
+					<a href="#">
+						<img srcset=
+							"images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg 5993w,
+							 images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg  2997w,
+							 images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1499w,
+							 images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg   750w"
+						  	sizes=
+							"(min-width: 1024px) 240px,
+							 (max-width: 1024px) 200px,
+							 (max-width: 768px) 200px,
+							 (max-width: 576px) 120px,
+							 240px"
+						  	src="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la Cannebière"
+						/>
+						<figcaption>
+						  <h3>Auberge la Cannebière</h3>
+						  <p>Nuit à partir de <strong>25€</strong></p>
+						  <div> <!-- étoiles -->
+							<i class="fas fa-star star_blue"></i>
+							<i class="fas fa-star star_blue"></i>
+							<i class="fas fa-star star_blue"></i>
+							<i class="fas fa-star star_blue"></i>
+							<i class="fas fa-star star_grey"></i>
+						  </div>
+						</figcaption>
+					</a>
+				</figure>
+			</div>
+			<div class="produit"> <!-- Hôtel du port -->
+				<figure class="hebergement_figure">
+					<a href="#">
+						<img srcset=
+							"images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg 5472w,
+							 images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg  2736w,
+							 images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg 1368w,
+							 images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg   684w"
+						  	sizes=
+							"(min-width: 1024px) 240px,
+							 (max-width: 1024px) 200px,
+							 (max-width: 768px) 200px,
+							 (max-width: 576px) 120px,
+							 240px"
+						  	src="images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port"
+						/>
+						<figcaption>
+						  <h3>Hôtel du port</h3>
+						  <p>Nuit à partir de 52<strong>€</strong></p>
+						  <div> <!-- étoiles -->
+							<i class="fas fa-star star_blue"></i>
+							<i class="fas fa-star star_blue"></i>
+							<i class="fas fa-star star_blue"></i>
+							<i class="fas fa-star star_blue"></i>
+							<i class="fas fa-star star_blue"></i>
+						  </div>
+						</figcaption>
+					</a>
+				</figure>
+			</div>
+			<div class="produit"> <!-- Auberge la Cannebière -->
 				<figure class="hebergement_figure"> <!-- Auberge de la Cannebière -->
 					<a href="#">
 						<img srcset=
@@ -99,19 +158,112 @@
 						  </div>
 						</figcaption>
 					</a>
-              	</figure>
+				</figure>
 			</div>
+			<div class="produit"> <!-- Auberge la Cannebière -->
+				<figure class="hebergement_figure"> <!-- Auberge de la Cannebière -->
+					<a href="#">
+						<img srcset=
+							"images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg 5993w,
+							 images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg  2997w,
+							 images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1499w,
+							 images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg   750w"
+						  	sizes=
+							"(min-width: 1024px) 240px,
+							 (max-width: 1024px) 200px,
+							 (max-width: 768px) 200px,
+							 (max-width: 576px) 120px,
+							 240px"
+						  	src="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la Cannebière"
+						/>
+						<figcaption>
+						  <h3>Auberge la Cannebière</h3>
+						  <p>Nuit à partir de <strong>25€</strong></p>
+						  <div> <!-- étoiles -->
+							<i class="fas fa-star star_blue"></i>
+							<i class="fas fa-star star_blue"></i>
+							<i class="fas fa-star star_blue"></i>
+							<i class="fas fa-star star_blue"></i>
+							<i class="fas fa-star star_grey"></i>
+						  </div>
+						</figcaption>
+					</a>
+				</figure>
+			</div>
+			<div class="produit"> <!-- Auberge la Cannebière -->
+				<figure class="hebergement_figure"> <!-- Auberge de la Cannebière -->
+					<a href="#">
+						<img srcset=
+							"images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg 5993w,
+							 images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg  2997w,
+							 images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1499w,
+							 images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg   750w"
+						  	sizes=
+							"(min-width: 1024px) 240px,
+							 (max-width: 1024px) 200px,
+							 (max-width: 768px) 200px,
+							 (max-width: 576px) 120px,
+							 240px"
+						  	src="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la Cannebière"
+						/>
+						<figcaption>
+						  <h3>Auberge la Cannebière</h3>
+						  <p>Nuit à partir de <strong>25€</strong></p>
+						  <div> <!-- étoiles -->
+							<i class="fas fa-star star_blue"></i>
+							<i class="fas fa-star star_blue"></i>
+							<i class="fas fa-star star_blue"></i>
+							<i class="fas fa-star star_blue"></i>
+							<i class="fas fa-star star_grey"></i>
+						  </div>
+						</figcaption>
+					</a>
+				</figure>
+			</div>
+			<div class="produit"> <!-- Auberge la Cannebière -->
+				<figure class="hebergement_figure"> <!-- Auberge de la Cannebière -->
+					<a href="#">
+						<img srcset=
+							"images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg 5993w,
+							 images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg  2997w,
+							 images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1499w,
+							 images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg   750w"
+						  	sizes=
+							"(min-width: 1024px) 240px,
+							 (max-width: 1024px) 200px,
+							 (max-width: 768px) 200px,
+							 (max-width: 576px) 120px,
+							 240px"
+						  	src="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la Cannebière"
+						/>
+						<figcaption>
+						  <h3>Auberge la Cannebière</h3>
+						  <p>Nuit à partir de <strong>25€</strong></p>
+						  <div> <!-- étoiles -->
+							<i class="fas fa-star star_blue"></i>
+							<i class="fas fa-star star_blue"></i>
+							<i class="fas fa-star star_blue"></i>
+							<i class="fas fa-star star_blue"></i>
+							<i class="fas fa-star star_grey"></i>
+						  </div>
+						</figcaption>
+					</a>
+				</figure>
+			</div>
+
 			<h3>Afficher plus</h3>
 		</div>
-		<div> <!-- Les plus populaires -->
+		
+		<div id="populaire"> <!-- Les plus populaires -->
 			<h2>Les plus populaires</h2>
 			<i class="fas fa-chart-line"></i>
 		</div>
-		<div> <!-- Activités à Marseilles -->
+		<div id="activites"> <!-- Activités à Marseilles -->
 			<h2>Activités à Marseilles</h2>
 		</div>
 	</main>
 	<footer>
+		
 	</footer>
 </body>
 </html>

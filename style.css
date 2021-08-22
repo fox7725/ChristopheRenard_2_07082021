@@ -1,3 +1,38 @@
 @charset "utf-8";
 /* CSS Document */
-
+/* =====tout le site===== */
+body {
+	align-items: center;
+	
+}
+/* =====conteneur du logo===== */
+.logo_div {
+	
+}
+/* =====logo===== */
+#logo {
+	
+}
+/* ===== conteneur menu ET logo=====*/
+.menu_logo {
+	display: flex;
+	justify-content: space-between;
+}
+/* ===== conteneur du menu =====*/
+.menu {
+	width: 33%;
+}
+/* =====liste à puces (sans puce) pour faire le menu===== */
+.menu ul {
+	width: 100%;
+	list-style: none;
+	display: flex;
+	padding: 0;
+	justify-content: space-around;
+}
+/* =====liens du menu : hébergement et activité=====*/
+.lien_menu_ah {
+}
+/* =====lien du menu : s'inscrire===== */
+.lien_menu_inscrire {
+}

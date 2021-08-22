@@ -1,9 +1,18 @@
 @charset "utf-8";
 /* CSS Document */
-/* =====tout le site===== */
+/* =====tout le site et généralité===== */
 body {
 	align-items: center;
-	
+	font-family: 'Raleway', sans-serif;
+}
+.txt_bleu {
+	color: #0065FC;
+}
+.txt_gris {
+	color: #F2F2F2;
+}
+.txt_noir {
+	color: black;
 }
 /* =====conteneur du logo===== */
 .logo_div {
@@ -24,15 +33,21 @@ body {
 }
 /* =====liste à puces (sans puce) pour faire le menu===== */
 .menu ul {
-	width: 100%;
 	list-style: none;
 	display: flex;
-	padding: 0;
 	justify-content: space-around;
 }
 /* =====liens du menu : hébergement et activité=====*/
 .lien_menu_ah {
+	text-decoration: none;
+}
+.lien_menu_ah:hover{
+	border-top: 1px solid #0065FC;
 }
 /* =====lien du menu : s'inscrire===== */
 .lien_menu_inscrire {
+	text-decoration: none;
+}
+.lien_menu_inscrire:hover {
+	border-top: 1px solid #0065FC;
 }

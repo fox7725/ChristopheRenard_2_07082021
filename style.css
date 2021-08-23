@@ -128,7 +128,81 @@ button {
 	border-top-right-radius: 45px;
 	display: flex;
 	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 .titre_filtres {
 	margin-right: 32px;
+}
+/* =====Point Information===== */
+.information {
+	display: flex;
+	align-items: center;
+}
+.icone_info {
+	width: 24px;
+	height: 24px;
+	border-radius: 25px;
+	border: 1px solid #F2F2F2;
+	color: #0065FC;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.information p {
+	padding-left: 20px;
+}
+/* ===== section hébergement et populaire===== */
+.hebergement_populaire {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.hebergement {
+	background-color: #F2F2F2;
+	width: 66%;
+	height: 626px;
+	border-radius: 15px;
+}
+.conteneur_produits_hebergement {
+	
+}
+.populaires {
+	background-color: #F2F2F2;
+	width: 32%;
+	height: 626px;
+	border-radius: 15px;
+}
+.titre_populaires {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.conteneur_produit_populaires {
+	
+}
+/* =====étoiles grises===== */
+.star_grey {
+	color:#F2F2F2;
+}
+/* =====étoiles bleues===== */
+.star_blue {
+	color:#0065FC;
+}
+/* =====chaque produit===== */
+.produit {
+	width: 250px;
+	height: 200px;
+	padding: 4px;
+	justify-content: center;
+}
+.hebergement_figure {
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 2px 1px 5px 2px rgb(209, 209, 209);
+}
+.hebergement_figure:hover {
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 2px 1px 5px 2px grey;
 }

@@ -42,15 +42,42 @@
 	<main>
 		<section> <!-- Première section : recherche et filtres -->
 			<div> <!-- Testimonial -->
-				
+				<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+				<p>En plein centre ville ou en pleine nature</p>
 			</div>
 			
-			<div> <!-- recherche -->
-				
+			<div class="barre_recherche"> <!-- recherche -->
+				<form class="formulaire_recherche" action="#" method="POST">
+					<div class="icone_recherche"> <!-- icône -->
+						<i class="fas fa-map-marker-alt"></i>
+					</div>
+					<div> <!-- barre de recherche -->
+						<input type="search" id="recherche" value="Marseille, France">
+					</div>
+					<div> <!-- bouton -->
+						<button type="submit">Rechercher</button>
+					</div>
+				</form>
 			</div>
 			
-			<div> <!-- filtres -->
-				
+			<div class="filtres"> <!-- filtres -->
+				<div class="titre_filtres"><h3>Filtres</h3></div>
+				<div class="filtre_solo">
+					<div class="icone_filtre"><i class="fas fa-money-bill-wave"></i></div>
+					<div class="filtre_solo_txt"><h3>Economique</h3></div>
+				</div>
+				<div class="filtre_solo">
+					<div class="icone_filtre"><i class="fas fa-child"></i></div>
+					<div class="filtre_solo_txt"><h3>Familial</h3></div>
+				</div>
+				<div class="filtre_solo">
+					<div class="icone_filtre"><i class="fas fa-heart"></i></div>
+					<div class="filtre_solo_txt"><h3>Romantique</h3></div>
+				</div>
+				<div class="filtre_solo">
+					<div class="icone_filtre"><i class="fas fa-dog"></i></div>
+					<div class="filtre_solo_txt"><h3>Animaux autorisés</h3></div>
+				</div>
 			</div>
 			
 			<div> <!-- Information -->

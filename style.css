@@ -14,6 +14,12 @@ body {
 .txt_noir {
 	color: black;
 }
+.fond_bleu_clair {
+	color: #DEEBFF;
+}
+.fond_gris {
+	color: #F2F2F2;
+}
 /* =====conteneur du logo===== */
 .logo_div {
 	
@@ -50,4 +56,79 @@ body {
 }
 .lien_menu_inscrire:hover {
 	border-top: 1px solid #0065FC;
+}
+/* =====formulaire de recherche===== */
+.barre_recherche {
+	width: 420px;
+	height: 50px;
+}
+.formulaire_recherche {
+	width: 420px;
+	height: 50px;
+	display: flex;
+	justify-content: flex-start;
+}
+.icone_recherche {
+	width: 50px;
+	height: 50px;
+	background-color: #F2F2F2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+#recherche {
+	width: 235px;
+	height: 50px;
+	font-weight: bold;
+	font-size: 17px;
+	padding-left: 2em;
+	border: 1px solid #F2F2F2;
+}
+button {
+	background-color: #0065FC;
+	width: 135px;
+	height: 50px;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	color: white;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+}
+/* =====filtres===== */
+.filtres {
+	height: 50px;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	display: flex;
+	align-items: center;
+}
+.filtre_solo {
+	height: 50px;
+	display: flex;
+	align-items: center;
+	margin-right: 24px;
+}
+.icone_filtre {
+	width: 52px;
+	height: 52px;
+	border-radius: 25px;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.filtre_solo_txt {
+	height: 50px;
+	border: 2px solid #F2F2F2;
+	border-bottom-right-radius: 45px;
+	border-top-right-radius: 45px;
+	display: flex;
+	align-items: center;
+}
+.titre_filtres {
+	margin-right: 32px;
 }

@@ -6,14 +6,25 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 .all {
-	line-height: 0.5em;
 	max-width: 1340px;
 	padding-left: 50px;
 	padding-right: 50px;
 }
 a {
+	text-decoration: none;
 	height: auto;
-	display: block;
+}
+h3 {
+	line-height: 1.17em;
+	margin-bottom: 0;
+	margin-top: 5px;
+}
+ul {
+	list-style: none;
+}
+.p_box {
+	line-height: 1em;
+	margin: 5px 0 5px 0;
 }
 .txt_bleu {
 	color: #0065FC;
@@ -25,10 +36,10 @@ a {
 	color: black;
 }
 .fond_bleu_clair {
-	color: #DEEBFF;
+	background-color: #DEEBFF;
 }
 .fond_gris {
-	color: #F2F2F2;
+	background-color: #F2F2F2;
 }
 /* =====conteneur du logo===== */
 .logo_div {
@@ -51,7 +62,6 @@ a {
 .menu ul {
 	margin: 0;
 	height: 100%;
-	list-style: none;
 	display: flex;
 	justify-content: space-around;
 }
@@ -63,7 +73,7 @@ a {
 	text-decoration: none;
 }
 .lien_menu_ah:hover{
-	border-top: 1px solid #0065FC;
+	border-top: 2px solid #0065FC;
 }
 /* =====lien du menu : s'inscrire===== */
 .lien_menu_inscrire {
@@ -73,7 +83,7 @@ a {
 	text-decoration: none;
 }
 .lien_menu_inscrire:hover {
-	border-top: 1px solid #0065FC;
+	border-top: 2px solid #0065FC;
 }
 /* =====formulaire de recherche===== */
 .barre_recherche {
@@ -174,6 +184,7 @@ button {
 }
 /* ===== section hébergement et populaire===== */
 .hebergement_populaire {
+	height: 626px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -181,10 +192,10 @@ button {
 .hebergement {
 	background-color: #F2F2F2;
 	flex: 2;
-	height: auto;
+	height: 100%;
 	max-width: 880px;
 	min-width: 375px;
-	padding: 40px;
+	padding: 0 40px 0 40px;
 	border-radius: 15px;
 }
 .conteneur_produits_hebergement {
@@ -194,10 +205,10 @@ button {
 	background-color: #F2F2F2;
 	flex: 1;
 	margin-left: 40px;
-	height: auto;
+	height: 100%;
 	max-width: 420px;
 	min-width: 375px;
-	padding: 40px;
+	padding: 0 40px 0 40px;
 	border-radius: 15px;
 }
 .titre_populaires {
@@ -206,7 +217,7 @@ button {
 	align-items: center;
 }
 .conteneur_produit_populaires {
-	display: flex;
+	/*display: flex;*/
 	/*flex-wrap: wrap;*/
 }
 /* =====étoiles grises===== */
@@ -251,6 +262,7 @@ button {
 	flex-wrap: wrap;
 }
 .aff_plus_heb {
+	margin-top: 20px;
 	display: flex;
 }
 /* =====Populaires===== */
@@ -261,16 +273,20 @@ button {
 	justify-content: center;*/
 }
 .populaire_figure {
-	width: 100%;
+	width: auto;
 	height: auto;
 	padding: 5px 5px 10px 5px;
 	background-color: white;
 	border-radius: 15px;
 	box-shadow: 2px 1px 5px 2px rgb(209, 209, 209);
+	margin-inline-start: 0;
+    margin-inline-end: 0;
 }
 .populaire_figure a {
 	display: flex;
-	justify-content: space-between;
+}
+.populaire_figure a figcaption {
+	margin-left: 20px;
 }
 .populaire_figure:hover {
 	background-color: white;
@@ -284,10 +300,94 @@ button {
 	border-bottom-left-radius: 15px;
 	object-fit: cover;
 }
+.etoiles_P {
+	
+}
+
 /* =====Activités à Marseille===== */
 #activites {
 	margin: 60px 0 60px 0;
+	height: 500px;
 }
 .conteneur_produits_activite {
-	
+	margin-left: -40px;
+	height: 471px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.produit_A {
+	width: 342px;
+	margin-left: 0;
+}
+.activite_figure {
+	width: 302px;
+	height: auto;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 2px 1px 5px 2px rgb(209, 209, 209);
+}
+.activite_figure:hover {
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 2px 1px 5px 2px grey;
+}
+.activite_figure a figcaption {
+	height: 45px;
+}
+.nom_activite {
+	height: 100%;
+	margin-left: 15px;
+	display: flex;
+	align-items: center;
+}
+
+/* =====footer===== */
+.footer {
+	height: 218px;
+	padding: 45px 360px 45px 45px;
+}
+.nav_footer {
+	display: flex;
+	justify-content: space-between;
+}
+.nav_footer ul {
+	padding-inline-start: 0;
+}
+/* =====images===== */
+.img_act_grand {
+	width: 100%;
+	height: 390px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	object-fit: cover;
+}
+.img_act_FP {
+	width: 100%;
+	height: 180px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	object-fit: cover;
+}
+.img_act_IF {
+	width: 100%;
+	height: 109px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	object-fit: cover;
+}
+.img_act_NDG {
+	width: 100%;
+	height: 139px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	object-fit: cover;
+}
+.img_act_PL {
+	width: 100%;
+	height: 153px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	object-fit: cover;
 }

@@ -7,8 +7,7 @@ body {
 }
 .all {
 	max-width: 1340px;
-	padding-left: 50px;
-	padding-right: 50px;
+	margin: 0 auto;
 }
 a {
 	text-decoration: none;
@@ -147,7 +146,7 @@ button {
 .filtre_solo {
 	margin-bottom: 13px;
 	height: 50px;
-	width: 100%;
+	width: auto;
 	display: flex;
 	align-items: center;
 	margin-right: 24px;
@@ -229,8 +228,9 @@ button {
 	align-items: center;
 }
 .conteneur_produit_populaires {
-	/*display: flex;*/
-	/*flex-wrap: wrap;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 /* =====étoiles grises===== */
 .star_grey {
@@ -285,17 +285,21 @@ button {
 	justify-content: center;*/
 }
 .populaire_figure {
-	width: auto;
+	width: 100%;
 	height: auto;
 	padding: 5px 5px 10px 5px;
 	background-color: white;
 	border-radius: 15px;
 	box-shadow: 2px 1px 5px 2px rgb(209, 209, 209);
-	margin-inline-start: 0;
-    margin-inline-end: 0;
+	margin: 20px 0;
 }
 .populaire_figure a {
 	display: flex;
+}
+.figcaption_P {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 .populaire_figure a figcaption {
 	margin-left: 20px;
@@ -322,8 +326,7 @@ button {
 	height: 500px;
 }
 .conteneur_produits_activite {
-	margin-left: -40px;
-	height: 471px;
+	height: 442px;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -339,6 +342,7 @@ button {
 	background-color: white;
 	border-radius: 15px;
 	box-shadow: 2px 1px 5px 2px rgb(209, 209, 209);
+	margin: 0;
 }
 .activite_figure:hover {
 	background-color: white;
@@ -353,22 +357,6 @@ button {
 	margin-left: 15px;
 	display: flex;
 	align-items: center;
-}
-
-/* =====footer===== */
-.footer {
-	height: 218px;
-	padding: 45px 360px 45px 45px;
-}
-.nav_footer {
-	display: flex;
-	justify-content: space-between;
-}
-.nav_footer ul {
-	padding-inline-start: 0;
-}
-.nav_footer ul li a {
-	color: black;
 }
 /* =====images===== */
 .img_act_grand {
@@ -405,4 +393,19 @@ button {
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 	object-fit: cover;
+}
+/* =====footer===== */
+.footer {
+	height: 218px;
+	padding: 45px 360px 45px 45px;
+}
+.nav_footer {
+	display: flex;
+	justify-content: space-between;
+}
+.nav_footer ul {
+	padding: 0;
+}
+.nav_footer ul li a {
+	color: black;
 }

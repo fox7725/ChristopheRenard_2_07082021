@@ -11,7 +11,7 @@ body {
 }
 a {
 	text-decoration: none;
-	height: auto;
+	height: 100%;
 }
 h3 {
 	color: black;
@@ -46,11 +46,11 @@ ul {
 }
 /* =====conteneur du logo===== */
 .logo_div {
-	
+	padding: 1% 0 0 2%;
 }
 /* =====logo===== */
 #logo {
-	
+	height: 50%;
 }
 /* ===== conteneur menu ET logo=====*/
 .menu_logo {
@@ -74,6 +74,7 @@ ul {
 	align-items: center;
 	height: 100%;
 	text-decoration: none;
+	border-top: 2px solid white;
 }
 .lien_menu_ah:hover{
 	border-top: 2px solid #0065FC;
@@ -142,6 +143,7 @@ button {
 	width: auto;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 .filtre_solo {
 	margin-bottom: 13px;
@@ -195,7 +197,7 @@ button {
 }
 /* ===== section hébergement et populaire===== */
 .hebergement_populaire {
-	height: 626px;
+	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -323,7 +325,6 @@ button {
 /* =====Activités à Marseille===== */
 #activites {
 	margin: 60px 0 60px 0;
-	height: 500px;
 }
 .conteneur_produits_activite {
 	height: 442px;
@@ -408,4 +409,76 @@ button {
 }
 .nav_footer ul li a {
 	color: black;
+}
+/* =====RESPONSIVE===== */
+@media screen and (max-width: 1360px) {
+	.hebergement_populaire {
+		height: 100%;
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.conteneur_produits_activite {
+		height: 884px;
+		align-items: center;
+	}
+	.hebergement {
+		width: 375px;
+	}
+	.populaires {
+		margin-left: 0;
+		margin-bottom: 40px;
+	}
+}
+@media screen and (max-width: 1095px) {
+	.populaires {
+		margin-left: 0;
+		margin-bottom: 40px;
+	}
+}
+@media screen and (max-width: 960px) {
+	.populaires {
+		margin-left: 0;
+		margin-bottom: 40px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.conteneur_produits_activite {
+		height: 1768px;
+		align-items: center;
+	}
+	.menu_logo {
+		flex-direction: column;
+	}
+	.logo_div {
+		padding: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.menu {
+		width: 100%;
+	}
+	.menu ul {
+		justify-content: space-between;
+		padding: 0;
+	}
+	.lien_menu_ah {
+		width: 49vw;
+		text-align: center;
+		border-bottom: 2px solid #F2F2F2;
+		justify-content: center;
+	}
+	.lien_menu_ah:hover{
+		border-bottom: 2px solid #0065FC;
+		border-top: none;
+	}
+	.hebergement {
+		background-color: white;
+	}
+	.populaires {
+		border-radius: 0;
+		margin-left: 0;
+		margin-bottom: 40px;
+	}
 }
